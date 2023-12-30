@@ -1,0 +1,10 @@
+.container {
+  color: #fff;
+  border-style: 1px solid;
+  border-color: teal;
+}
+
+.title,
+.statistics_title {
+  font-size: 40px;
+}
