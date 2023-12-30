@@ -18,7 +18,8 @@ class Statistics extends Component {
   // };
 
   render() {
-    const { good, neutral, bad, total, positivePercentage } = this.props;
+    // const { good, neutral, bad, total, positivePercentage } = this.props;
+    const { good, neutral, bad } = this.props;
     return (
       <div className={css.container}>
         <p className={css.statistics_title}>Statistics</p>
