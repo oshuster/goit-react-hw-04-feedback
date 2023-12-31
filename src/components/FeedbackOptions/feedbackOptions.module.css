@@ -1,34 +1,8 @@
-.container {
-  color: #fff;
-  border-style: 1px solid;
-  border-color: teal;
-}
-
-.title,
-.statistics_title {
-  font-size: 40px;
-}
-
 .button_wrapper {
   display: flex;
   justify-content: space-evenly;
 }
-/* .button {
-  margin-left: 15px;
-  font-size: 20px;
-  border-radius: 10px;
-  padding: 5px 10px;
-} */
 
-/* .statistics_title {
-  font-size: 40px;
-} */
-
-.result {
-  font-size: 30px;
-}
-
-/* CSS */
 .button {
   background-color: #fff;
   border: 0 solid #e2e8f0;
@@ -58,11 +32,4 @@
 .button:hover {
   background-color: #4f6381;
   color: #fff;
-}
-
-@media (min-width: 768px) {
-  .button {
-    font-size: 1.125rem;
-    padding: 1rem 2rem;
-  }
 }
