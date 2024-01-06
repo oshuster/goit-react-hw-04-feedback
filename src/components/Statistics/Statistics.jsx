@@ -4,7 +4,6 @@ import css from './statistics.module.css';
 class Statistics extends Component {
   render() {
     const { good, neutral, bad, total, positivePercentage } = this.props;
-    console.log(total);
     return (
       <>
         <p className={css.result}>
