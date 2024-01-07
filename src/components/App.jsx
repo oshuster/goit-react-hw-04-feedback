@@ -13,12 +13,10 @@ class App extends Component {
     bad: 0,
   };
 
-  handleClick = ({ target: { name } }) => {
-    this.setState(
-      prevState => ({ [name]: prevState[name] + 1 }),
-      this.countTotalFeedback
-    );
+  onLeaveFeedback = option => {
+    this.setState(prevState => ({ [option]: prevState[option] + 1 }));
   };
+
   countTotalFeedback = () => {
     const { good, neutral, bad } = this.state;
     return good + neutral + bad;
@@ -34,12 +32,17 @@ class App extends Component {
   };
 
   render() {
+    const buttonList = Object.keys(this.state);
+
     const { good, bad, neutral } = this.state;
     return (
       <div className={css.container}>
         <h1 className={css.title}>{this.props.title}</h1>
         <Section title="Please leave feefback">
-          <FeedbackOptions handleClick={this.handleClick} />
+          <FeedbackOptions
+            options={buttonList}
+            onLeaveFeedback={this.onLeaveFeedback}
+          />
         </Section>
         <Section title="Statistics">
           {this.countTotalFeedback() ? (

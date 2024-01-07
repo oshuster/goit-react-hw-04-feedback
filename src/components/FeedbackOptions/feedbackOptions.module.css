@@ -33,3 +33,7 @@
   background-color: #4f6381;
   color: #fff;
 }
+
+.button_title {
+  text-transform: capitalize;
+}
